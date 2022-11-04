@@ -230,7 +230,6 @@ margin-bottom: 38px;
 .luring-items__input {
   background-color: var(--color-white);
   padding: 0 25px;
-  background-color: var(--color-accent);
 }
 .luring-items__button {
   height: 35px;
