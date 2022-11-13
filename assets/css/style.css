@@ -68,6 +68,20 @@ a {
   background: var(--color-accent);
   border-radius: 30px;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  }
+
 .navbar-secondary__lists {
   list-style: none;
   display: flex;
@@ -194,44 +208,93 @@ margin-bottom: 38px;
 }
 .offers-items__action {
   display: flex;
-}
+  }
 
 .luring {
-  color: var(--color-white);
   margin-bottom: 100px;
+  color: var(--color-white);
 }
-.luring__contant {
+.luring__title {
+}
+.luring__content {
   display: flex;
-  align-items: center;
-  flex: 1;
   gap: var(--gap-m);
 }
-.luring-items {
-  display: flex;
-  align-items: center;
+.envelop {
   background-color: var(--color-accent);
-  gap: 70px;
-  padding: var(--gap-m) var(--gap-large);
-}
-.luring-items__contant {
-  display: flex;
-  flex-direction: column;
-  gap: var(--gap);
   flex: 1;
+  background-image: url(../img/Group\ \(1\).svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 45px) 50%;
+  padding: 35px  var(--gap-large);
 }
-.luring-items__title {
+.envelop__content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 250px;
+}
+.envelop__title {
   font-size: 18px;
   line-height: 21px;
-  margin: 0;
 }
-.luring-items__text {
+.envelop__discription {
+  font-size: 14px;
   line-height: 20px;
 }
-.luring-items__input {
-  background-color: var(--color-white);
-  padding: 0 25px;
+.envelop__form {
+  max-width: 225px;
 }
-.luring-items__button {
+.envelop__input {
+  padding: 0.25em 1em;
+  display: block;
+  width: 100%;
+  border-radius: 30px;
+  border: none;
   height: 35px;
-  max-width: 170px;
+  }
+.envelop__input::placeholder {
+color: #C4C4C4;
+}
+
+.car {
+  background-color: var(--color-accent);
+  flex: 1;
+  background-image: url(../img/Group\ \(2\).svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 45px) 50%;
+  padding: 35px  var(--gap-large);
+}
+.car__content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 250px;
+}
+.car__title {
+  font-size: 18px;
+  line-height: 21px;
+}
+.car__discription {
+  font-size: 14px;
+  line-height: 20px;
+}
+.car__actions {
+  display: flex;
+}
+
+.advertising {
+  margin-bottom: 80px;
+}
+.advertising__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  text-align: center;
+}
+.advertising-item {
+  background-color: var(--color-white);
+  padding: 35px;
+}
+.advertising-item__image {
 }
